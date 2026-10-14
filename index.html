@@ -8,124 +8,224 @@
 <meta property="og:title" content="BEER Lab｜Behavioral and Experimental Economics Research Lab">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://m-beer.xyz/">
+<meta property="og:image" content="https://m-beer.xyz/assets/sample_cover.png">
 <link rel="canonical" href="https://m-beer.xyz/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root { --navy: #17324d; --orange: #c2572b; --ground: #f4f1ec; --ink: #1c2330; --sub: #4a5565; --rule: #d5dbe2; }
-* { box-sizing: border-box; }
-body { margin: 0; font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: 16px; line-height: 1.85; color: var(--ink); font-weight: 400; background: #fff; }
-h1, h2, h3, b, strong { font-weight: 400; }
-a { color: var(--navy); }
-.w { max-width: 860px; margin: 0 auto; padding: 0 24px; }
-header { background: var(--navy); color: #fff; }
-header .w { display: flex; justify-content: space-between; align-items: baseline; padding-top: 18px; padding-bottom: 18px; }
-header .lab { font-size: 20px; letter-spacing: .12em; font-weight: 600; }
-header .full { font-size: 12.5px; letter-spacing: .04em; opacity: .9; }
-.kicker { color: var(--orange); font-size: 14px; letter-spacing: .12em; margin: 64px 0 10px; }
-h1 { font-size: 38px; line-height: 1.4; color: var(--navy); font-weight: 600; margin: 0 0 22px; letter-spacing: .01em; }
-.deck { font-size: 18px; line-height: 1.9; max-width: 720px; margin: 0 0 56px; }
-h2 { font-size: 24px; color: var(--navy); font-weight: 600; margin: 72px 0 8px; padding-top: 18px; border-top: 1.5px solid var(--navy); }
-.lead { color: var(--sub); margin: 0 0 22px; font-size: 15px; }
-.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
-.item { border-top: 1px solid var(--orange); padding: 16px 0 22px; }
-.item .n { color: var(--orange); font-size: 22px; font-weight: 600; line-height: 1; margin-bottom: 8px; }
-.item h3 { font-size: 18px; color: var(--navy); margin: 0 0 6px; font-weight: 600; }
-.item p { margin: 0; font-size: 15px; line-height: 1.8; }
-.item .meta { color: var(--sub); font-size: 13.5px; margin-top: 8px; }
-.box { background: var(--ground); padding: 26px 30px 20px; margin-top: 18px; }
-.box ul { margin: 0; padding-left: 1.2em; } .box li { margin-bottom: 8px; }
-dl { display: grid; grid-template-columns: 8em 1fr; gap: 10px 20px; margin: 18px 0 0; }
-dt { color: var(--sub); font-size: 14.5px; } dd { margin: 0; }
-.todo { background: #fff3c4; color: #6b5200; font-size: 12.5px; padding: 1px 7px; border-radius: 3px; margin-left: 6px; white-space: nowrap; }
-.contact a { text-decoration: none; border-bottom: 1px solid var(--orange); }
-.contact { font-size: 22px; color: var(--navy); margin: 14px 0 6px; letter-spacing: .02em; }
-footer { margin-top: 88px; border-top: 1px solid var(--rule); color: var(--sub); font-size: 13px; }
-footer .w { padding-top: 18px; padding-bottom: 40px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 24px; }
-@media (max-width: 680px) { h1 { font-size: 28px; } .deck { font-size: 16px; } .menu { grid-template-columns: 1fr; } header .full { display: none; } dl { grid-template-columns: 1fr; gap: 2px; } dd { margin-bottom: 12px; } }
-.menu.th .item { border-top: 1px solid var(--rule); padding: 14px 0 16px; }
-.menu.th h3 { font-size: 16.5px; }
+html{scroll-behavior:smooth}
+body{margin:0}
+a{color:#1c1a17}a:hover{color:#8a5a00}
+img{max-width:100%}
 </style>
 </head>
 <body>
+<div style="font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', sans-serif; color: #1c2330; background: #ffffff; font-size: 16px; line-height: 1.9">
 
-<header><div class="w"><span class="lab">BEER Lab</span><span class="full">Behavioral and Experimental Economics Research Lab</span></div></header>
+<header style="background: #ffffff; color: #1c1a17; border-bottom: 1px solid #e3e0da">
+<div style="max-width: 1120px; margin: 0 auto; padding: 22px 32px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; align-items: baseline">
+<div style="display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap">
+<span style="font-size: 24px; font-weight: 900; letter-spacing: 0.14em">BEER Lab</span>
+<span style="font-family: 'DM Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #6b665f">Behavioral and Experimental Economics Research Lab</span>
+</div>
+<nav style="display: flex; gap: 26px; flex-wrap: wrap; font-size: 14px">
+<a href="#work" style="color: #1c1a17; text-decoration: none">頼めること</a>
+<a href="#report" style="color: #1c1a17; text-decoration: none">レポート</a>
+<a href="#themes" style="color: #1c1a17; text-decoration: none">テーマ</a>
+<a href="#contact" style="color: #1c1a17; text-decoration: none; border-bottom: 3px solid #f2b233; padding-bottom: 2px">連絡先</a>
+</nav>
+</div>
+</header>
 
-<main class="w">
-
-<div class="kicker">行動経済学の研究室から</div>
-<h1>行動の研究を，画面と手続きを<br>作る人と一緒に使う</h1>
-<p class="deck">人がなぜその選択をするのかを，実験とデータで確かめてきました．BEER Lab は，その研究と，処分や規制の資料を読み，自社の画面や手続きで何を確かめればよいかを，作る側の方と一緒に考えます．</p>
-
-<h2>お引き受けしている形</h2>
-<p class="lead">中身と条件は，ご事情を伺ってから決めます．まずはメールでご相談ください．</p>
-<div class="menu">
-
-<div class="item"><div class="n">1</div><h3>レポート「ダークパターンを画面で読む」</h3>
-<p>毎号，手口の類型を1つ取り上げます．行政の処分と事例を画面の図に起こし，規制の動き，研究の結果，自社で確かめる点を同じ型で並べます．</p>
-<p class="meta">隔月，4〜6頁の PDF．見本号はメールでご請求ください．</p></div>
-
-<div class="item"><div class="n">2</div><h3>講演と社内研修</h3>
-<p>下のテーマから，聞き手に合わせて組み立てます．自社の画面や文書を持ち寄って点検する演習の回も作れます．</p>
-<p class="meta">60分の講演から1日の研修まで．オンライン可．</p></div>
-
-<div class="item"><div class="n">3</div><h3>研究顧問</h3>
-<p>月に1〜2回の打ち合わせと，資料への意見．新しい画面や施策を考える段階で，研究と処分例から，先に確かめておく点をお返しします．</p>
-<p class="meta">月ごとの契約．スポットでのご質問もお受けします．</p></div>
-
-<div class="item"><div class="n">4</div><h3>証拠の調べ物</h3>
-<p>「この施策に効果の証拠はあるか」という問いに，論文を調べて2〜4頁でお答えします．分かっていること，分かっていないこと，読むときの注意を分けて書きます．</p>
-<p class="meta">1件ごと．納期はご相談．</p></div>
-
-<div class="item"><div class="n">5</div><h3>調査と実験</h3>
-<p>表示や手順の違いで人の理解と行動がどう変わるかを，調査や実験で測ります．アンケートや A/B テストを，結論を誤らない形で組むご相談もお受けします．</p>
-<p class="meta">1件ごと．</p></div>
-
-<div class="item"><div class="n">6</div><h3>記事とコンテンツの監修</h3>
-<p>行動経済学と心理学に関わる記事，教材，社内資料の内容を確かめます．</p>
-<p class="meta">共同研究は，所属大学を通じた契約になります．</p></div>
-
+<section style="background: #ffffff; color: #1c1a17">
+<div style="max-width: 1120px; margin: 0 auto; padding: 64px 32px 96px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 480px; min-width: 0">
+<div style="font-family: 'DM Mono', monospace; font-size: 12.5px; letter-spacing: 0.16em; color: #8a5a00; margin-bottom: 22px">行動経済学の研究室から</div>
+<h1 style="margin: 0 0 28px; font-size: clamp(27px, 3.75vw, 48px); line-height: 1.32; font-weight: 900; letter-spacing: 0.01em">人は，<span style="background: linear-gradient(transparent 62%, #f6c95a 62%)">大きさと位置と</span><br>並べ方で，判断を変える．</h1>
+<p style="margin: 0 0 36px; font-size: 17px; line-height: 2; color: #3a3631; max-width: 520px">BEER Lab は，その研究と，処分や規制の資料を読み，自社の画面や手続きで何を確かめればよいかを，作る側の方と一緒に考えます．</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#contact" style="display: inline-block; background: #1c1a17; color: #ffffff; font-weight: 700; text-decoration: none; padding: 14px 26px; border-radius: 4px; font-size: 15px">見本号を請求する</a>
+<a href="#work" style="display: inline-block; border: 1px solid #1c1a17; color: #1c1a17; text-decoration: none; padding: 13px 26px; border-radius: 4px; font-size: 15px">頼めることを見る</a>
+</div>
 </div>
 
-<h2>ご相談いただけるテーマ</h2>
-<p class="lead">下記は一例です．行動経済学に関わるテーマ全般について，ご相談に応じます．</p>
-<div class="menu th">
-<div class="item"><h3>ダークパターンと消費者保護</h3><p>利用者を欺く画面設計とは何か．国内外の規制の動向と，信頼を損なわない画面づくりの考え方．</p></div>
-<div class="item"><h3>価格・マーケティングと消費者行動</h3><p>値付け，選択肢の見せ方，定期購入や解約の設計．買い手がどう感じ，どう選ぶかを実験の知見から考えます．</p></div>
-<div class="item"><h3>ナッジと行動変容</h3><p>健康，環境，行政手続き．手続きの負担（スラッジ）を減らし，望ましい行動を後押しする設計と，効果の確かめ方．</p></div>
-<div class="item"><h3>意思決定とバイアス</h3><p>損失回避，現在バイアス，アンカリング．人の判断の癖を，自社の商品・業務の場面に引きつけてお話しします．</p></div>
-<div class="item"><h3>AIと人間の意思決定</h3><p>人はAIの助言をどこまで信じるのか．AIに任せると判断はどう変わるのか．人とAIを同じ場で比べる実験の知見から．</p></div>
-<div class="item"><h3>人事・組織とインセンティブ</h3><p>評価や報酬は人をどう動かすのか．協力，公平感，やる気をそぐ仕組みについて．</p></div>
-<div class="item"><h3>調査と実験の設計</h3><p>アンケートや A/B テストの組み方．AIに回答させる調査の使いどころと限界．</p></div>
+<div style="flex: 0 1 360px; min-width: 0; display: flex; justify-content: center">
+<div aria-hidden="true" style="position: relative; width: 100%; max-width: 420px; background: #f6f4ef; border: 1px solid #e3e0da; border-radius: 14px; padding: 26px 26px 30px; box-sizing: border-box; color: #1c1a17">
+<div style="height: 12px; width: 46%; background: #dfe3e8; border-radius: 3px; margin-bottom: 20px"></div>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px">
+<span style="font-family: 'DM Mono', monospace; font-size: 46px; line-height: 1; font-weight: 500; color: #8a5a00">990</span>
+<span style="font-size: 20px; color: #8a5a00; font-weight: 700">円</span>
+<span style="margin-left: auto; font-family: 'DM Mono', monospace; font-size: 12px; background: #1c1a17; color: #ffffff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center">1</span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px">
+<div style="flex: 1; border: 1px solid #b9c2cc; padding: 8px 10px; display: flex; flex-direction: column; gap: 5px">
+<div style="height: 3px; background: #b9c2cc; width: 96%"></div>
+<div style="height: 3px; background: #b9c2cc; width: 88%"></div>
+<div style="height: 3px; background: #b9c2cc; width: 92%"></div>
+<div style="height: 3px; background: #b9c2cc; width: 61%"></div>
+</div>
+<span style="font-family: 'DM Mono', monospace; font-size: 12px; background: #1c1a17; color: #ffffff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex: none">2</span>
+</div>
+<div style="height: 10px; width: 72%; background: #dfe3e8; border-radius: 3px; margin-bottom: 8px"></div>
+<div style="height: 10px; width: 58%; background: #dfe3e8; border-radius: 3px; margin-bottom: 20px"></div>
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="flex: 1; background: #1c1a17; color: #ffffff; text-align: center; padding: 13px; border-radius: 4px; font-size: 14px; font-weight: 700">注文を確定する</div>
+<span style="font-family: 'DM Mono', monospace; font-size: 12px; background: #1c1a17; color: #ffffff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex: none">3</span>
+</div>
+<div style="margin-top: 22px; padding-top: 16px; border-top: 1px solid #e3e0da; display: flex; flex-direction: column; gap: 6px; font-size: 12.5px; line-height: 1.6; color: #3d4753">
+<div><span style="font-family: 'DM Mono', monospace; color: #8a5a00; margin-right: 8px">1</span>大きさ：初回の額だけが大きい</div>
+<div><span style="font-family: 'DM Mono', monospace; color: #8a5a00; margin-right: 8px">2</span>位置：条件は枠の中の小さな字</div>
+<div><span style="font-family: 'DM Mono', monospace; color: #8a5a00; margin-right: 8px">3</span>並べ方：ボタンの直上に条件が無い</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="work" style="max-width: 1120px; margin: 0 auto; padding: 96px 32px 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 12px 48px; align-items: baseline; margin-bottom: 36px">
+<h2 style="margin: 0; font-size: 34px; font-weight: 900; color: #1c1a17; letter-spacing: 0.02em">頼めること</h2>
+<p style="margin: 0; color: #6b665f; font-size: 15px">中身と条件は，ご事情を伺ってから決めます．まずはメールでご相談ください．</p>
 </div>
 
-<h2>しないこと</h2>
-<div class="box"><ul>
+<div style="border-top: 2px solid #1c1a17">
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0; border-bottom: 1px solid #e3e0da; align-items: baseline">
+<div style="font-family: 'DM Mono', monospace; font-size: 15px; color: #8a5a00; flex: 0 0 48px">01</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700; color: #1c1a17; flex: 1 1 340px; line-height: 1.5">レポート「ダークパターンを画面で読む」</h3>
+<div style="flex: 2 1 420px; min-width: 0">
+<p style="margin: 0 0 6px; font-size: 15.5px">毎号，手口の類型を1つ取り上げます．行政の処分と事例を画面の図に起こし，規制の動き，研究の結果，自社で確かめる点を同じ型で並べます．</p>
+<p style="margin: 0; font-size: 13.5px; color: #6b665f">隔月，4〜6頁の PDF．見本号はメールでご請求ください．</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0; border-bottom: 1px solid #e3e0da; align-items: baseline">
+<div style="font-family: 'DM Mono', monospace; font-size: 15px; color: #8a5a00; flex: 0 0 48px">02</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700; color: #1c1a17; flex: 1 1 340px; line-height: 1.5">講演と社内研修</h3>
+<div style="flex: 2 1 420px; min-width: 0">
+<p style="margin: 0 0 6px; font-size: 15.5px">下のテーマから，聞き手に合わせて組み立てます．自社の画面や文書を持ち寄って点検する演習の回も作れます．</p>
+<p style="margin: 0; font-size: 13.5px; color: #6b665f">60分の講演から1日の研修まで．オンライン可．</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0; border-bottom: 1px solid #e3e0da; align-items: baseline">
+<div style="font-family: 'DM Mono', monospace; font-size: 15px; color: #8a5a00; flex: 0 0 48px">03</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700; color: #1c1a17; flex: 1 1 340px; line-height: 1.5">研究顧問</h3>
+<div style="flex: 2 1 420px; min-width: 0">
+<p style="margin: 0 0 6px; font-size: 15.5px">月に1〜2回の打ち合わせと，資料への意見．新しい画面や施策を考える段階で，研究と処分例から，先に確かめておく点をお返しします．</p>
+<p style="margin: 0; font-size: 13.5px; color: #6b665f">月ごとの契約．スポットでのご質問もお受けします．</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0; border-bottom: 1px solid #e3e0da; align-items: baseline">
+<div style="font-family: 'DM Mono', monospace; font-size: 15px; color: #8a5a00; flex: 0 0 48px">04</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700; color: #1c1a17; flex: 1 1 340px; line-height: 1.5">証拠の調べ物</h3>
+<div style="flex: 2 1 420px; min-width: 0">
+<p style="margin: 0 0 6px; font-size: 15.5px">「この施策に効果の証拠はあるか」という問いに，論文を調べて2〜4頁でお答えします．分かっていること，分かっていないこと，読むときの注意を分けて書きます．</p>
+<p style="margin: 0; font-size: 13.5px; color: #6b665f">1件ごと．納期はご相談．</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0; border-bottom: 1px solid #e3e0da; align-items: baseline">
+<div style="font-family: 'DM Mono', monospace; font-size: 15px; color: #8a5a00; flex: 0 0 48px">05</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700; color: #1c1a17; flex: 1 1 340px; line-height: 1.5">調査と実験</h3>
+<div style="flex: 2 1 420px; min-width: 0">
+<p style="margin: 0 0 6px; font-size: 15.5px">表示や手順の違いで人の理解と行動がどう変わるかを，調査や実験で測ります．アンケートや A/B テストを，結論を誤らない形で組むご相談もお受けします．</p>
+<p style="margin: 0; font-size: 13.5px; color: #6b665f">1件ごと．</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0; border-bottom: 1px solid #e3e0da; align-items: baseline">
+<div style="font-family: 'DM Mono', monospace; font-size: 15px; color: #8a5a00; flex: 0 0 48px">06</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700; color: #1c1a17; flex: 1 1 340px; line-height: 1.5">記事とコンテンツの監修</h3>
+<div style="flex: 2 1 420px; min-width: 0">
+<p style="margin: 0 0 6px; font-size: 15.5px">行動経済学と心理学に関わる記事，教材，社内資料の内容を確かめます．</p>
+<p style="margin: 0; font-size: 13.5px; color: #6b665f">共同研究は，所属大学を通じた契約になります．</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="report" style="background: #f6f4ef; margin-top: 72px">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; gap: 20px; justify-content: center; align-items: flex-start">
+<img src="assets/sample_cover.png" alt="見本号の表紙．題は「書いてある」だけでは，処分を免れない" style="width: 54%; max-width: 270px; height: auto; display: block; border: 1px solid #e3e0da; background: #ffffff">
+<img src="assets/sample_figures.png" alt="見本号の3頁め．処分された確認の欄を図に起こした頁" style="width: 54%; max-width: 270px; height: auto; display: block; border: 1px solid #e3e0da; background: #ffffff; margin-top: 48px; margin-left: -18%">
+</div>
+<div style="flex: 1 1 440px; min-width: 0">
+<div style="font-family: 'DM Mono', monospace; font-size: 12.5px; letter-spacing: 0.16em; color: #8a5a00; margin-bottom: 16px">隔月のレポート</div>
+<h2 style="margin: 0 0 22px; font-size: 34px; line-height: 1.45; font-weight: 900; color: #1c1a17">ダークパターンを<br>画面で読む</h2>
+<p style="margin: 0 0 20px; font-size: 16px">処分の公表文は，文章で画面を説明しています．それを図に起こすと，何が問われたのかが一目で分かります．見本号では，通信販売の行政処分14件を全部読み，処分された確認の欄を図にしました．</p>
+<div style="display: flex; flex-wrap: wrap; gap: 28px 44px; margin: 0 0 30px">
+<div><div style="font-family: 'DM Mono', monospace; font-size: 40px; line-height: 1.1; color: #8a5a00">14</div><div style="font-size: 13px; color: #6b665f">件の処分を通読</div></div>
+<div><div style="font-family: 'DM Mono', monospace; font-size: 40px; line-height: 1.1; color: #8a5a00">4</div><div style="font-size: 13px; color: #6b665f">枚の画面の図</div></div>
+<div><div style="font-family: 'DM Mono', monospace; font-size: 40px; line-height: 1.1; color: #8a5a00">10</div><div style="font-size: 13px; color: #6b665f">点の確かめる項目</div></div>
+</div>
+<a href="#contact" style="display: inline-block; background: #1c1a17; color: #ffffff; font-weight: 700; text-decoration: none; padding: 14px 26px; border-radius: 4px; font-size: 15px">見本号を請求する</a>
+</div>
+</div>
+</section>
+
+<section id="themes" style="max-width: 1120px; margin: 0 auto; padding: 96px 32px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 12px 48px; align-items: baseline; margin-bottom: 36px">
+<h2 style="margin: 0; font-size: 34px; font-weight: 900; color: #1c1a17; letter-spacing: 0.02em">ご相談いただけるテーマ</h2>
+<p style="margin: 0; color: #6b665f; font-size: 15px">下記は一例です．行動経済学に関わるテーマ全般について，ご相談に応じます．</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 48px; border-top: 2px solid #1c1a17">
+<div style="padding: 24px 0; border-bottom: 1px solid #e3e0da"><h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700; color: #1c1a17">ダークパターンと消費者保護</h3><p style="margin: 0; font-size: 14.5px; line-height: 1.85">利用者を欺く画面設計とは何か．国内外の規制の動向と，信頼を損なわない画面づくりの考え方．</p></div>
+<div style="padding: 24px 0; border-bottom: 1px solid #e3e0da"><h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700; color: #1c1a17">価格・マーケティングと消費者行動</h3><p style="margin: 0; font-size: 14.5px; line-height: 1.85">値付け，選択肢の見せ方，定期購入や解約の設計．買い手がどう感じ，どう選ぶかを実験の知見から考えます．</p></div>
+<div style="padding: 24px 0; border-bottom: 1px solid #e3e0da"><h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700; color: #1c1a17">ナッジと行動変容</h3><p style="margin: 0; font-size: 14.5px; line-height: 1.85">健康，環境，行政手続き．手続きの負担（スラッジ）を減らし，望ましい行動を後押しする設計と，効果の確かめ方．</p></div>
+<div style="padding: 24px 0; border-bottom: 1px solid #e3e0da"><h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700; color: #1c1a17">意思決定とバイアス</h3><p style="margin: 0; font-size: 14.5px; line-height: 1.85">損失回避，現在バイアス，アンカリング．人の判断の癖を，自社の商品・業務の場面に引きつけてお話しします．</p></div>
+<div style="padding: 24px 0; border-bottom: 1px solid #e3e0da"><h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700; color: #1c1a17">AIと人間の意思決定</h3><p style="margin: 0; font-size: 14.5px; line-height: 1.85">人はAIの助言をどこまで信じるのか．AIに任せると判断はどう変わるのか．人とAIを同じ場で比べる実験の知見から．</p></div>
+<div style="padding: 24px 0; border-bottom: 1px solid #e3e0da"><h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700; color: #1c1a17">人事・組織とインセンティブ</h3><p style="margin: 0; font-size: 14.5px; line-height: 1.85">評価や報酬は人をどう動かすのか．協力，公平感，やる気をそぐ仕組みについて．</p></div>
+<div style="padding: 24px 0; border-bottom: 1px solid #e3e0da"><h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700; color: #1c1a17">調査と実験の設計</h3><p style="margin: 0; font-size: 14.5px; line-height: 1.85">アンケートや A/B テストの組み方．AIに回答させる調査の使いどころと限界．</p></div>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 72px 32px 24px">
+<div style="border: 2px solid #1c1a17; padding: 40px 44px; display: flex; flex-wrap: wrap; gap: 20px 56px">
+<h2 style="margin: 0; font-size: 26px; font-weight: 900; color: #1c1a17; flex: 0 0 auto">しないこと</h2>
+<ul style="margin: 0; padding-left: 1.2em; flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15.5px">
 <li>法的な助言はしません．個別の画面や表示が法令に反するかどうかにはお答えしません．適法かどうかは，顧問の弁護士にお確かめください．</li>
 <li>個別の事業者の画面について，良い悪いの判定を公表しません．</li>
 <li>根拠には，全文を読めた公的な資料と論文だけを使います．</li>
-</ul></div>
+</ul>
+</div>
+</section>
 
-<h2>代表</h2>
-<dl>
-<dt>名前</dt><dd>後藤 晶（ごとう あきら）</dd>
-<dt>専門</dt><dd>行動経済学，実験社会科学，計算社会科学</dd>
-<dt>研究</dt><dd>ナッジとダークパターンの実験，経済ゲームの実験，AI と人の相互作用</dd>
-<dt>経歴と業績</dt><dd><a href="https://akrgt.github.io/">研究者としての頁</a>をご覧ください．</dd>
-</dl>
+<section id="contact" style="max-width: 1120px; margin: 0 auto; padding: 72px 32px 104px; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 380px; min-width: 0">
+<h2 style="margin: 0 0 22px; font-size: 26px; font-weight: 900; color: #1c1a17">代表</h2>
+<div style="font-size: 24px; font-weight: 700; color: #1c1a17; line-height: 1.5">後藤 晶 <span style="font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 400; color: #6b665f; margin-left: 8px">GOTO Akira</span></div>
+<p style="margin: 10px 0 14px; font-size: 15px">行動経済学，実験社会科学，計算社会科学．ナッジとダークパターンの実験，経済ゲームの実験，AI と人の相互作用を研究しています．</p>
+<a href="https://akrgt.github.io/" style="font-size: 15px">経歴と業績は，研究者としての頁へ</a>
+</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<h2 style="margin: 0 0 22px; font-size: 26px; font-weight: 900; color: #1c1a17">ご依頼の流れ</h2>
+<p style="margin: 0 0 22px; font-size: 15px">メールで，ご所属，ご相談の内容，ご希望の時期をお知らせください．内容を確認のうえ，お引き受けの可否と条件をご連絡します．お引き受けは，所属大学の規程に沿って行います．</p>
+<div style="background: #1c1a17; color: #ffffff; padding: 22px 26px; border-radius: 4px">
+<div style="font-family: 'DM Mono', monospace; font-size: 11.5px; letter-spacing: 0.16em; color: #f2b233; margin-bottom: 6px">MAIL</div>
+<div style="font-family: 'DM Mono', monospace; font-size: clamp(17px, 2.2vw, 22px); letter-spacing: 0.01em; overflow-wrap: anywhere"><a href="#contact" id="ml" style="color: #ffffff; text-decoration: none; border-bottom: 2px solid #f2b233">akiragoto [at] m-beer.xyz</a></div>
+<div style="font-size: 12.5px; color: #cfc9bd; margin-top: 6px">[at] を @ に置き換えてください．アドレスを押すと，メールの画面が開きます．</div>
+</div>
+</div>
+</section>
 
-<h2>ご依頼の流れ</h2>
-<p>メールで，ご所属，ご相談の内容，ご希望の時期をお知らせください．内容を確認のうえ，お引き受けの可否と条件をご連絡します．お引き受けは，所属大学の規程に沿って行います．</p>
-<p class="contact"><a href="#" id="ml" title="メールを書く">akiragoto [at] m-beer.xyz</a></p>
-<p class="lead">[at] を @ に置き換えてください．アドレスを押すと，メールの画面が開きます．</p>
+<footer style="border-top: 1px solid #e3e0da">
+<div style="max-width: 1120px; margin: 0 auto; padding: 22px 32px 44px; display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; font-size: 13px; color: #6b665f">
+<span>BEER Lab（Behavioral and Experimental Economics Research Lab）　代表 後藤 晶</span>
+<span style="font-family: 'DM Mono', monospace">m-beer.xyz</span>
+</div>
+</footer>
+
+</div>
 <script>
 document.getElementById("ml").addEventListener("click", function (e) {
   e.preventDefault();
   location.href = "mai" + "lto:" + ["akiragoto", "m-beer.xyz"].join(String.fromCharCode(64));
 });
 </script>
-
-</main>
-
-<footer><div class="w"><span>BEER Lab（Behavioral and Experimental Economics Research Lab）　代表 後藤 晶</span><span>m-beer.xyz</span></div></footer>
-
 </body>
 </html>
