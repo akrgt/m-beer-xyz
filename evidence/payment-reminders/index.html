@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>督促と通知の文面｜BEER Lab エビデンス集</title>
+<meta name="description" content="督促状や納付通知の文面を変えた試験の結果を，全文を読めた研究だけでまとめた自治体向けエビデンス集の見本．">
+<meta property="og:title" content="督促と通知の文面｜BEER Lab エビデンス集">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://m-beer.xyz/evidence/payment-reminders/">
+<link rel="canonical" href="https://m-beer.xyz/evidence/payment-reminders/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c1a17'/%3E%3Crect x='6' y='22' width='20' height='4' fill='%23f2b233'/%3E%3Ctext x='16' y='19' font-family='Arial,sans-serif' font-weight='900' font-size='17' text-anchor='middle' fill='%23ffffff'%3EB%3C/text%3E%3C/svg%3E">
+<style>body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* 縦一列の読み物．要点→手ごとのカード（大きな数字）→効かなかった例→注意→試し方→出典．色と字は m-beer.xyz と同じ */
+:root{
+  --ink:#1c1a17; --body:#3a3631; --muted:#6b665f;
+  --paper:#ffffff; --tint:#f6f4ef; --line:#e3e0da;
+  --amber:#8a5a00; --gold:#f2b233; --mark:#f6c95a;
+  --bar-base:#cfc9bd;
+  --sans:'Zen Kaku Gothic New','Hiragino Sans','Hiragino Kaku Gothic ProN',sans-serif;
+  --mono:'DM Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#f1ede6; --body:#d6d0c6; --muted:#a39d93;
+  --paper:#181614; --tint:#221f1b; --line:#38332d;
+  --amber:#f2b233; --gold:#f2b233; --mark:#9a6a12; --bar-base:#5a544b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#f1ede6; --body:#d6d0c6; --muted:#a39d93;
+  --paper:#181614; --tint:#221f1b; --line:#38332d;
+  --amber:#f2b233; --gold:#f2b233; --mark:#9a6a12; --bar-base:#5a544b; color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.9}
+a{color:var(--ink)} a:hover{color:var(--amber)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:16px;flex-wrap:wrap}
+.brand{font-weight:900;text-decoration:none;letter-spacing:.02em}
+.back{font-size:14px;color:var(--muted)}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;color:var(--amber)}
+.hero{padding-block:48px 32px;display:grid;gap:14px}
+h1{margin:0;font-size:clamp(26px,5vw,40px);line-height:1.35;font-weight:900;text-wrap:balance}
+h1 span{background:linear-gradient(transparent 62%,var(--mark) 62%)}
+.meta{color:var(--muted);font-size:14px;margin:0}
+h2{font-size:clamp(21px,4vw,26px);font-weight:900;margin:0;text-wrap:balance}
+section{padding-block:28px;display:grid;gap:18px}
+p{margin:0;color:var(--body);max-width:40em}
+.points{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:pt}
+.points li{display:grid;grid-template-columns:2.2em 1fr;gap:4px 10px;color:var(--body);counter-increment:pt}
+.points li::before{content:counter(pt);font-family:var(--mono);font-size:13px;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;justify-content:center;margin-top:3px}
+.group-title{font-size:15px;font-weight:700;color:var(--amber);margin:8px 0 0}
+.cards{display:grid;border-top:1px solid var(--line)}
+.card{display:grid;grid-template-columns:13.5em minmax(0,1fr);gap:4px 24px;padding-block:18px;border-bottom:1px solid var(--line);align-items:start}
+.card>*{grid-column:2;min-width:0}
+.card>.num{grid-column:1;grid-row:1 / span 4}
+@media (max-width:640px){.card{grid-template-columns:minmax(0,1fr)}.card>*,.card>.num{grid-column:1;grid-row:auto}}
+.num{font-family:var(--mono);font-weight:500;font-size:26px;line-height:1.2;color:var(--amber);font-variant-numeric:tabular-nums}
+.num small{font-family:var(--sans);font-size:14px;font-weight:700;margin-left:3px}
+.what{font-weight:700;color:var(--ink);line-height:1.6}
+.where{font-size:13.5px;color:var(--muted);line-height:1.7}
+.note{font-size:13.5px;color:var(--body);line-height:1.7}
+.src{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.meta-box{border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:14px}
+.bar{display:flex;height:34px;border-radius:4px;overflow:hidden;font-family:var(--mono);font-size:12.5px}
+.bar div{display:flex;align-items:center;justify-content:center;white-space:nowrap}
+.bar .b0{background:var(--bar-base);color:var(--ink)}
+.bar .b1{background:var(--mark);color:var(--ink)}
+.bar .b2{background:var(--gold);color:#1c1a17}
+.bar .rest{background:transparent;border:1px dashed var(--line);border-left:0}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13.5px;color:var(--body)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.nots{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.nots li{border-left:3px solid var(--bar-base);padding-left:14px;color:var(--body)}
+.jp{background:var(--tint);border-radius:10px;padding:20px;display:grid;gap:12px}
+.jp-row{display:flex;flex-wrap:wrap;gap:10px 22px;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.jp-row div{display:grid}
+.jp-row b{font-size:24px;font-weight:500;color:var(--amber)}
+.jp-row span{font-family:var(--sans);font-size:13px;color:var(--muted)}
+.steps{margin:0;padding-left:1.4em;display:grid;gap:10px;color:var(--body)}
+.steps li::marker{font-family:var(--mono);color:var(--amber)}
+details{border-top:1px solid var(--line);padding-top:14px}
+summary{cursor:pointer;font-weight:700}
+.refs{margin:14px 0 0;padding-left:1.6em;display:grid;gap:8px;font-size:13.5px;color:var(--body);line-height:1.7;overflow-wrap:anywhere}
+.cta{background:var(--tint);border-radius:10px;padding:22px;display:grid;gap:10px;margin-block:12px 48px}
+.cta a.btn{justify-self:start;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:700;padding:12px 22px;border-radius:4px;font-size:15px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer .wrap{padding-block:20px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="https://m-beer.xyz/">BEER Lab</a>
+  <a class="back" href="https://m-beer.xyz/#work">一緒にできることへ戻る</a>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">エビデンス集　見本 01　自治体の業務</div>
+    <h1>期限までに払ってもらう：<br><span>督促と通知の文面</span></h1>
+    <p class="meta">対象：税，保険料，使用料，反則金などの納付通知，督促状，催告書．2026年10月版．</p>
+  </div>
+
+  <section>
+    <h2>要点</h2>
+    <ol class="points">
+      <li>期限を過ぎた人に通知を送ること自体に，大きな効果があります．文面の工夫で上乗せできるのは，多くの場合数ポイントです．</li>
+      <li>上乗せとして比較的安定して効いているのは，「払わないと何が起きるか」を具体的に書くことです．「多くの人は払っています」という一文は，効いた研究と効かなかった研究に分かれます．</li>
+      <li>送る時期を早めると，払われるのが早くなります．最終的に払う人の割合は変わらなかったという結果もあります．</li>
+      <li>長く滞納している人や，滞納額が大きい人には，どの文面も効きにくいようです．</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>70本あまりの試験の平均</h2>
+    <div class="meta-box">
+      <p>何も送らないと約25%が払います．通知を送ると2.7ポイント，罰則などの情報を足すとさらに3.2ポイント上がり，約31%になります．</p>
+      <div class="bar" role="img" aria-label="何も送らない25%，通知で2.7ポイント，罰則の情報で3.2ポイント，合計約31%">
+        <div class="b0" style="width:25%">25%</div>
+        <div class="b1" style="width:2.7%"></div>
+        <div class="b2" style="width:3.2%"></div>
+        <div class="rest" style="width:69.1%"></div>
+      </div>
+      <div class="legend">
+        <span><i style="background:var(--bar-base)"></i>何も送らない</span>
+        <span><i style="background:var(--mark)"></i>通知を送る　＋2.7</span>
+        <span><i style="background:var(--gold)"></i>罰則などの情報　＋3.2</span>
+      </div>
+      <div class="src">出典10．数字は2024年7月のワーキングペーパー版</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>試された手と結果</h2>
+    <p>数字の物差しは研究ごとに違います．納付率の差，払った人の割合の変化，反応した割合などです．研究どうしで数字の大小を比べることはできません．</p>
+
+    <div class="group-title">送ること自体</div>
+    <div class="cards">
+      <div class="card">
+        <div class="num">＋25<small>ポイント</small></div>
+        <div class="what">期限後に督促状を送る</div>
+        <div class="where">オーストラリア国税庁　小規模事業者の滞納税　4,787件</div>
+        <div class="note">7週間後に払っていた割合の，送らない群との差．</div>
+        <div class="src">出典1</div>
+      </div>
+      <div class="card">
+        <div class="num">0.8% → 7.7%</div>
+        <div class="what">未登録の疑いがある世帯に手紙を送る</div>
+        <div class="where">オーストリアの受信料　約5万世帯</div>
+        <div class="note">50日以内に払い始めた割合．左が送らない群．</div>
+        <div class="src">出典2</div>
+      </div>
+      <div class="card">
+        <div class="num">1%未満 → 3%超</div>
+        <div class="what">半年以上未払いの人に催告の手紙を送る</div>
+        <div class="where">オーストラリア首都特別地域　交通と駐車の反則金　約1万件</div>
+        <div class="note">6週間で一部または全額を払った割合．手紙1ドルあたりの回収額は3.77ドル．</div>
+        <div class="src">出典7</div>
+      </div>
+    </div>
+
+    <div class="group-title">文面に足す</div>
+    <div class="cards">
+      <div class="card">
+        <div class="num">＋5.1<small>ポイント</small></div>
+        <div class="what">「10人に9人は期限までに払っています．あなたはまだ払っていない，ごく少数の側です」という趣旨の一文</div>
+        <div class="where">英国の税務当局　所得税の滞納者　約10万人</div>
+        <div class="note">通常の督促状との差．</div>
+        <div class="src">出典3</div>
+      </div>
+      <div class="card">
+        <div class="num">3.9%</div>
+        <div class="what">「この金額には利息がかかっています」という一文</div>
+        <div class="where">英国の税務当局　所得税の滞納者　約12万人</div>
+        <div class="note">数字は原文の表記のまま．</div>
+        <div class="src">出典3</div>
+      </div>
+      <div class="card">
+        <div class="num">47% → 約66%</div>
+        <div class="what">文面を簡素にし，延滞したときの負担を書く</div>
+        <div class="where">スロバキアの市　ごみ収集料金の滞納者　約2,100人</div>
+        <div class="note">年末までに払った割合．左が従来の通知．姓の順で群を分けた準実験．</div>
+        <div class="src">出典4</div>
+      </div>
+      <div class="card">
+        <div class="num">31.8% → 36.9%</div>
+        <div class="what">罰則の額と，裁判でほぼ勝っている事実の両方を書く</div>
+        <div class="where">チェコの受信料　1通目に反応しなかった約9,100世帯</div>
+        <div class="note">反応した割合．どちらか片方だけでは差がなかった．</div>
+        <div class="src">出典5</div>
+      </div>
+      <div class="card">
+        <div class="num">＋7.9<small>ポイント</small></div>
+        <div class="what">簡素化，延滞の負担，「3人に2人は期限までに払っています」を全部入れる</div>
+        <div class="where">ベルギーの市　駐車違反の反則金　約2,700人</div>
+        <div class="note">期限内の納付．比較を多く行ったことを補正すると，確かとは言えなくなる．</div>
+        <div class="src">出典6</div>
+      </div>
+    </div>
+
+    <div class="group-title">送り方を変える</div>
+    <div class="cards">
+      <div class="card">
+        <div class="num">早いほど早い</div>
+        <div class="what">督促状を期限の10日後，17日後，25日後に送り分ける</div>
+        <div class="where">オーストラリア国税庁　小規模事業者の滞納税</div>
+        <div class="note">早く送ると払われるのが早くなる．7週間後に払っていた割合は，どの時期でも変わらなかった．</div>
+        <div class="src">出典1</div>
+      </div>
+      <div class="card">
+        <div class="num">＋約5<small>ポイント</small></div>
+        <div class="what">同じ SMS を1回だけでなく，週1回4週送る</div>
+        <div class="where">上海市の1区　固定資産税の滞納者　約1,700人</div>
+        <div class="note">1回だけの群との差．週2回にしても，それ以上の上積みははっきりしない．</div>
+        <div class="src">出典8</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>効かなかった例，効きにくかった例</h2>
+    <ul class="nots">
+      <li>「公平さ」や「道徳」に訴える文は，オーストリアの受信料では効果が見られませんでした．</li>
+      <li>「多くの人は払っています」という一文は，スロバキアでは足しても上積みがありませんでした．オーストラリアの反則金では，罰則を書いた手紙より効きませんでした．</li>
+      <li>ベルギーの例では，文面を簡素にしただけの通知も，延滞の負担を足しただけの通知も，はっきりした差は出ませんでした．</li>
+      <li>長く滞納している人には効きにくい結果が並んでいます．スロバキアでは滞納の履歴が長い人に効果が見られず，上海では過去2年とも払っていない人が例外として効果がはっきりしませんでした．オーストラリアの反則金では，「多くの人は払っています」の手紙が長期の滞納者に効いていません．</li>
+      <li>オーストラリア国税庁の例では，7,500豪ドル以上の滞納には督促状が効いていません．</li>
+      <li>効果は送ってから数週間に集中し，その後は差が縮みます．</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>日本の近い例</h2>
+    <div class="jp">
+      <p>横浜市戸塚区の固定資産税で，口座振替の案内を3通りに分けて送った試験です．ナッジ版は，チラシを簡素にし，延滞金のリスクを強調し，申込に必要な番号を同封しました．</p>
+      <div class="jp-row" role="group" aria-label="口座振替の申込率">
+        <div><b>17.2%</b><span>ナッジ版のチラシ</span></div>
+        <div><b>8.4%</b><span>通常のチラシ</span></div>
+        <div><b>1.1%</b><span>送らない</span></div>
+      </div>
+      <p>翌年度に要素を分けると，チラシと番号の同封がそれぞれ約3ポイント効き，封筒のデザインには効果が見られませんでした．測ったのは口座振替の申込率です．期限内の納付が増えたかは，報告書でも今後の課題とされています．</p>
+      <div class="src">出典9</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>読むときの注意</h2>
+    <ul class="nots">
+      <li>ほとんどが海外の研究です．日本の督促状の文面を無作為に変えて納付率を測り，報告書を全文公開している例は，今回の調べでは見つかりませんでした．</li>
+      <li>効いた文面には，罰則や手続きについて正しい事実を書いたものが多く含まれます．事実でない脅しは使えません．法令で決まった記載事項は変えず，足すのは一文や見せ方の工夫，という前提です．法令上の判断は，各自治体でご確認ください．</li>
+      <li>強い文面が受け取った人の不安や行政への印象にどう影響するかは，ほとんど測られていません．</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>自分の所で試すなら</h2>
+    <ol class="steps">
+      <li>試す相手を決めます．はじめは「1回だけ期限を過ぎた人」が向いています．効果が出やすく，件数も多いからです．</li>
+      <li>発送する分を2つ以上に分けます．宛名の番号の末尾など，文面と関係のない基準で分け，同じ日に送ります．送る日がずれると比べられません．</li>
+      <li>何を測るかを先に決めます．たとえば「発送から30日以内に全額を払った割合」です．</li>
+      <li>人数の目安です．払う割合が30%から33%に上がる程度の差を見分けるには，1つの群に約3,800人が必要です（有意水準5%，検出力80%で試算）．足りないときは，2年度分を合わせるなどの工夫をします．</li>
+      <li>結果は「効かなかった」場合も記録に残します．次の文面を選ぶ材料になります．</li>
+    </ol>
+  </section>
+
+  <section>
+    <details>
+      <summary>出典（10件．すべて全文を読んで確認）</summary>
+      <ol class="refs">
+        <li>Gillitzer, C., &amp; Sinning, M. (2020). Nudging businesses to pay their taxes: Does timing matter? Journal of Economic Behavior &amp; Organization, 169, 284-300. <a href="https://doi.org/10.1016/j.jebo.2019.11.020">doi.org/10.1016/j.jebo.2019.11.020</a></li>
+        <li>Fellner, G., Sausgruber, R., &amp; Traxler, C. (2013). Testing enforcement strategies in the field: Threat, moral appeal and social information. Journal of the European Economic Association, 11(3), 634-660. <a href="https://doi.org/10.1111/jeea.12013">doi.org/10.1111/jeea.12013</a>（受理稿で確認）</li>
+        <li>Hallsworth, M., List, J. A., Metcalfe, R. D., &amp; Vlaev, I. (2017). The behavioralist as tax collector: Using natural field experiments to enhance tax compliance. Journal of Public Economics, 148, 14-31. <a href="https://doi.org/10.1016/j.jpubeco.2017.02.003">doi.org/10.1016/j.jpubeco.2017.02.003</a>（受理稿で確認）</li>
+        <li>Sloboda, M., Pavlovský, P., &amp; Sičáková-Beblavá, E. (2024). Simplify and deter: Nudging waste collection fee debtors. Journal of Behavioral and Experimental Economics, 111, 102225. <a href="https://doi.org/10.1016/j.socec.2024.102225">doi.org/10.1016/j.socec.2024.102225</a></li>
+        <li>Chadimová, K. (2024). Deterrence strength in TV fee enforcement: Field evidence from the Czech Republic. Journal of Behavioral and Experimental Economics, 112, 102245. <a href="https://doi.org/10.1016/j.socec.2024.102245">doi.org/10.1016/j.socec.2024.102245</a></li>
+        <li>Migchelbrink, K., &amp; Raymaekers, P. (2023). Nudging people to pay their parking fines on time. Journal of Behavioral and Experimental Economics, 105, 102033. <a href="https://doi.org/10.1016/j.socec.2023.102033">doi.org/10.1016/j.socec.2023.102033</a></li>
+        <li>Sinning, M., &amp; Zhang, Y. (2023). Social norms or enforcement? A natural field experiment to improve traffic and parking fine compliance. Journal of Economic Behavior &amp; Organization, 210, 43-60. <a href="https://doi.org/10.1016/j.jebo.2023.03.029">doi.org/10.1016/j.jebo.2023.03.029</a></li>
+        <li>Antinyan, A., Asatryan, Z., Dai, Z., &amp; Wang, K. (2021). Does the frequency of reminders matter for their effectiveness? A randomized controlled trial. Journal of Economic Behavior &amp; Organization, 191, 752-764. <a href="https://doi.org/10.1016/j.jebo.2021.09.023">doi.org/10.1016/j.jebo.2021.09.023</a></li>
+        <li>小林庸平ほか (2021, 2022)「ナッジを用いた固定資産税の口座振替勧奨」三菱UFJリサーチ&amp;コンサルティング 政策研究レポート．<a href="https://www.murc.jp/wp-content/uploads/2021/03/seiken_210325.pdf">2021年版</a>，<a href="https://www.murc.jp/wp-content/uploads/2022/06/seiken_220630_01.pdf">2022年版</a></li>
+        <li>Antinyan, A., &amp; Asatryan, Z. (2025). Nudging for tax compliance: A meta-analysis. The Economic Journal, 135(668), 1033-1068. <a href="https://doi.org/10.1093/ej/ueae088">doi.org/10.1093/ej/ueae088</a>（数字は2024年7月のワーキングペーパー版 ZEW DP 24-054 で確認）</li>
+      </ol>
+    </details>
+  </section>
+
+  <div class="cta">
+    <h2>うちの通知でも確かめたい</h2>
+    <p>お手元の通知の文面に，どの研究が当てはまるかを調べます．発送を分けて効果を測る試験の組み方も，ご相談ください．</p>
+    <a class="btn" href="https://m-beer.xyz/#contact">相談の窓口へ</a>
+  </div>
+</main>
+
+<footer><div class="wrap">BEER Lab（代表 後藤晶）</div></footer>
+
+</body>
+</html>
