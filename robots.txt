@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://m-beer.xyz/sitemap.xml
